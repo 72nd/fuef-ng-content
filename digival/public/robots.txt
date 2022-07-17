@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://content.festivalfuerfreunde.de/sitemap.xml
