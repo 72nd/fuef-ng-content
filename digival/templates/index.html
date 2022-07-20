@@ -3,4 +3,15 @@
 {% block content %}
 <h1 class="title">Festival für Freunde − Digival 2022</h1>
 <p>Willkommen auf der barierenfreien Version der digitalen Ausgabe des <a href="www.festivalfuerfreunde.de">Festival für Freunde</a>. Hier findest du direkt alle Inhalte, welcher auf der Karte zu finden sind. Wenn du nicht auf die barierefreie Version angewiesen bist, empfehlen wir dir das Benutzen unserer <a href="TODO">digitalen Festivalkarte</a>.</p>
+
+{% set section = get_section(path="contribution/_index.md") %}
+<ul>
+	{% for suse in section.subsections %}
+		{% set sub_page = get_section(path=suse) %}
+		<li><a href="{{ sub_page.permalink | safe }}">{{ sub_page.title }}</a></li>
+	{% endfor %}
+	{% for page in section.pages %}
+		<li>{{ page.title }}</li>
+	{% endfor %}
+</ul>
 {% endblock content %}

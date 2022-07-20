@@ -3,14 +3,15 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Digival</title>
-		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="/main.css">
+		{% block additional_header %} {% endblock %}
 	</head>
 
 	<body>
-		<section class="section">
+		<main class="section">
 			<div class="container">
 				{% block content %} {% endblock %}
 			</div>
-		</section>
+		</main>
 	</body>
 </html>
