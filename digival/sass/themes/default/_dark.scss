@@ -2,7 +2,7 @@
 @mixin dark {
   // Document
   color-scheme: dark;
-  --background-color: #{mix($black, $grey-900, 37.5%)};
+  --background-color: #0c0b1a;
 
   // Texts colors
   --color: #{$grey-200};
