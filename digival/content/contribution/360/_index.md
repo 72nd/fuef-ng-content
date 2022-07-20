@@ -1,6 +1,6 @@
 +++
 title = "360° Bilder"
-weight = 1
+weight = 10
 template = "contributions.html"
 page_template = "360.html"
 sort_by = "weight"
